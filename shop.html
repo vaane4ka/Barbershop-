@@ -41,148 +41,134 @@
 				<a class="breadcrumbs-item" href="#">МАГАЗИН</a>
 				<span class="breadcrumbs-selected breadcrumbs-item">СРЕДСТВА ДЛЯ УХОДА</span>
 			</div>
-			<section class="content-creators">		<!-- Список производителей -->
-				<h2>ПРОИЗВОДИТЕЛИ:</h2>
-				<ul>
-					<li class="creators-selected">		<!-- Отмеченный производитель -->
-						<label>
-							<input type="checkbox" checked>
-							BAXTER OF CALIFORNIA
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox">
-							MR NATTY
-						</label>
-					</li>
-					<li class="creators-selected">		<!-- Отмеченный производитель -->
-						<label>
-							<input type="checkbox" checked>
-							SUAVECITO
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox">
-							MALIN+GOETZ
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox">
-							MURRAY'S
-						</label>
-					</li>
-					<li class="creators-selected">		<!-- Отмеченный производитель -->
-						<label>
-							<input type="checkbox" checked>
-							AMERICAN CREW
-						</label>
-					</li>
-				</ul>
-			</section>
-			<section class="content-groups">			<!-- Группы товаров -->
-				<h2>ГРУППЫ ТОВАРОВ:</h2>
-				<ul>
-					<li>
-						<label>
-							<input type="checkbox">
-							БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" checked>			<!-- Отмеченная группа товаров -->
-							СРЕДСТВА ДЛЯ УХОДА
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox">
-							АКСЕССУАРЫ
-						</label>
-					</li>
-				</ul>
-			</section>
-			<a class="btn content-btn">ПОКАЗАТЬ</a>			
+			<form>		
+				<fieldset class="content-creators">		<!-- Список производителей -->
+					<legend>ПРОИЗВОДИТЕЛИ:</legend>	
+							<label>
+								<input type="checkbox" name="baxter" checked>
+								BAXTER OF CALIFORNIA
+							</label>
+							<br>
+							<label>
+								<input type="checkbox">
+								MR NATTY
+							</label>
+							<br>	
+							<label>
+								<input type="checkbox" name="suavecito" checked>
+								SUAVECITO
+							</label>
+							<br>
+							<label>
+								<input type="checkbox">
+								MALIN+GOETZ
+							</label>
+							<br>
+							<label>
+								<input type="checkbox">
+								MURRAY'S
+							</label>
+							<br>
+							<label>
+								<input type="checkbox" name="american" checked>
+								AMERICAN CREW
+							</label>
+				</fieldset>
+				<fieldset class="content-groups">			<!-- Группы товаров -->
+					<legend>ГРУППЫ ТОВАРОВ:</legend>
+							<label>
+								<input type="radio" name="groups" value="britva">
+								БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
+							</label>
+							<br>
+							<label>
+								<input type="radio" name="groups" value="sredstvo" checked >			<!-- Отмеченная группа товаров -->
+								СРЕДСТВА ДЛЯ УХОДА
+							</label>
+							<br>
+							<label>
+								<input type="radio" name="groups" value="aksesuar">
+								АКСЕССУАРЫ
+							</label>
+				</fieldset>
+				<input type="submit" value="ПОКАЗАТЬ">
+			</form>		
 			<section class="content-products">  		<!-- Галерея(сетка) товаров -->
 				<div class="products-position">   			<!-- Один товар -->
 					<img src="#" alt="Набор для путешествий">
 					<div class="position-info"> 		<!-- Блок информации о товаре -->
-  						<p>Набор для путешествий<br>
-  						   'BAXTER OF CALIFORNIA'</p>
-  						<div class="position-price">	<!-- Блок цены -->
-  							<span>2 900 РУБ.</span>  			
-  						</div>
-  						<div>
-  						<a class="btn products-btn" href="#">КУПИТЬ</a>
-  						</div>  	
-					</div>
-				</div>
+  						<a><span>Набор для путешествий</span><br>
+  						   <span>'BAXTER OF CALIFORNIA'</span></a>
+  					</div>
+  					<div class="position-price">	
+  						<span>2 900 РУБ.</span>  			
+  						<a class="btn price-btn" href="#">
+  							<span>КУПИТЬ</span>
+  						</a>
+  					</div>  	
 				<div class="products-position">			
 					<img src="#" alt="Увлажняющий кондиционер">
 					<div class="products-position-info">		
-						<p>Увлажняющий кондиционер<br>
-							'BAXTER OF CALIFORNIA' </p>
-						<div class="position-price">		
-							<span>750 РУБ.</span>		
-						</div>
-						<div>
-							<a class="btn products-btn" href="#">КУПИТЬ</a>
-						</div>
+						<a><span>Увлажняющий кондиционер</span><br>
+							<span>'BAXTER OF CALIFORNIA'</span></a>
+					</div>
+					<div class="position-price">		
+						<span>750 РУБ.</span>		
+						<a class="btn price-btn" href="#">
+							<span>КУПИТЬ</span>
+						</a>
 					</div>
 				</div>	
 				<div class="products-position">		
 					<img src="#" alt="Гель для волос">
 					<div class="products-position-info">		
-						<p>Гель для волос<br>
-						   'SUAVECITO'</p>
-						<div class="position-price">   
-							<span>290 РУБ.</span>
-						</div>
-						<div>
-							<a class="btn products-btn" href="#">КУПИТЬ</a>
-						</div>
+						<a><span>Гель для волос</span><br>
+						   <span>'SUAVECITO'</span></a>
+					</div>	   
+					<div class="position-price">   
+						<span>290 РУБ.</span>
+						<a class="btn price-btn" href="#">
+							<span>КУПИТЬ</span>
+						</a>
 					</div>
 				</div>
 				<div class="products-position">			
 					<img src="#" alt="Глина для укладки волос">
 					<div class="products-position-info">			
-						<p>Гель для укладки волос<br>
-						   'AMERICAN CREW'</p>
-						<div class="position-price">
-							<span>500 РУБ.</span>			
-						</div>
-						<div>
-							<a class="btn products-btn" href="#">КУПИТЬ</a>
-						</div>
+						<a><span>Гель для укладки волос</span><br>
+						   <span>'AMERICAN CREW'</span></a>
+					</div>
+					<div class="position-price">
+						<span>500 РУБ.</span>			
+						<a class="btn price-btn" href="#">
+							<span>КУПИТЬ</span>
+						</a>
 					</div>
 				</div>
 				<div class="products-position">			
 					<img src="#" alt="Гель для волос">
 					<div class="products-position-info">		
-						<p>Гель для волос<br>
-						   'AMERICAN CREW'</p>
-						<div class="position-price">
-							<span>300 РУБ.</span>			
-						</div>
-						<div>
-							<a class="btn products-btn" href="#">КУПИТЬ</a>
-						</div>
+						<a><span>Гель для волос</span><br>
+						   <span>'AMERICAN CREW'</span></a>
+					</div>
+					<div class="position-price">
+						<span>300 РУБ.</span>			
+						<a class="btn price-btn" href="#">
+							<span>КУПИТЬ</span>
+						</a>
 					</div>
 				</div>
 				<div class="products-position">			
 					<img src="#" alt="Набор для Бритья">
 					<div class="products-position-info">			
-						<p>Набор для бриться<br>
-						   "BAXTER OF CALIFORNIA</p>
-						<div class="position-price">
-							<span>3 900 РУБ.</span>			
-						</div>
-						<div>
-							<a class="btn products-btn" href="#">КУПИТЬ</a>
-						</div>
+						<a><span>Набор для бриться</span><br>
+						   <span>"BAXTER OF CALIFORNIA</span></a>
+					</div>
+					<div class="position-price">
+						<span>3 900 РУБ.</span>			
+						<a class="btn price-btn" href="#">
+							<span>КУПИТЬ</span>
+						</a>
 					</div>
 				</div>
 			</section>
