@@ -9,46 +9,41 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 }
 
 .main-header {
-	margin-bottom: 55px;
+	margin-bottom: 60px;
 }
 
 .main-navigation {
-	width: 780px;
 	float: left;
+	width: 780px;
 }
 
 .user-block {
-	width: 140px;
 	float: right;
+	width: 140px;
 }
 
-.content-title {
+.content-name {
 	float: left;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 .breadcrumbs {
 	float: left;
-	margin-bottom: 58px;
+	margin-bottom: 60px;
 }
 
-.product-photo {
+form {
 	float: left;
-	width: 486px;
-	margin-right: 90px;
+	width: 170px;
 }
 
-.product-decription {
+.content-products {
 	float: right;
-	width: 390px;
-}
-
-.description-info {
-	padding-top: 26px;
+	width: 700px;
 }
 
 .main-footer {
@@ -65,11 +60,11 @@
 
 .footer-social {
 	float: left;
-	width: 180px;	
+	width: 180px;
 }
 
 .footer-copyright {
 	float: right;
-	width: 140px;
-	
+	widows: 140px;
+
 }

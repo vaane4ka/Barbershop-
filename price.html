@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Барбершоп 'Бородинский', Прайс</title>
+	<link rel="stylesheet" href="css/price.css">
 </head>
 <body>
 	<header class="main-header">  		<!-- Хедер(меню) -->
-		<div class="container">  		<!-- Центровщик -->
+		<div class="container clearfix">  		<!-- Центровщик -->
 			<nav class="main-navigation">		<!--  Основное меню -->
  				<ul>
  					<li>
@@ -34,51 +35,60 @@
  			</div>
 		</div>	
 	</header>
-	<main class="container content">   	<!-- Основной контент / Центровщик -->
-		<h1 class="page-name">ПРАЙС-ЛИСТ</h1>
-		<div class="breadcrumbs"> 	<!-- Меню навигаций / Хлебные крошки  -->
+	<main class="container content clearfix">   	<!-- Основной контент / Центровщик -->
+		<h1 class="content-name clearfix">ПРАЙС-ЛИСТ</h1>
+		<div class="breadcrumbs clearfix"> 	<!-- Меню навигаций / Хлебные крошки  -->
 	    	<a href="#">ГЛАВНАЯ</a>
 	    	<span class="breadcrumbs-selected breadcrumbs-item">ПРАЙС-ЛИСТ</span>
 		</div>
-			<span class="content-title">ИСТИННО МУЖСКАЯ КЛАССИКА</span>
- 		<div class="content-instruments">  	<!-- Левая колонка контента -->
- 			<h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br>
- 				ЛУЧШИЕ СРЕДСТВА:</h2>
- 			<ul>
- 				<li>BAXTER OF CALIFORNIA</li>
- 				<li>MR NATTY</li>
- 				<li>SUAVECITO</li>
- 				<li>MALIN+GOETZ</li>
- 			</ul>
- 		</div>
- 		<div class="content-price">
- 			<h2>ЦЕНА НА УСЛУГИ<br>
- 				НАШИХ МАСТЕРОВ:</h2>
- 			<table>					<!-- Таблица: Услуги/Цена -->
-  				<tr>
-				    <td><b>СТРИЖКА</b></td>
-				    <td class="table-price">1500 Р.</td>
-  				</tr>
-				<tr>
-				    <td><b>СТРИЖКА БОРОДЫ</b></td>
-				    <td class="table-price">500 Р.</td>
-				</tr>
-  				<tr>
-				    <td><b>НАКРУТКА УСОВ</b></td>
-				    <td class="table-price">350 Р.</td>
-  		        </tr>
- 		</div>
- 		<div class="content-about">     <!-- Информация о фирме -->
- 			<h2>НЕСКОЛЬКО СЛОВ О НАС:</h2>
- 			<p class="about-left">НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ
- 			   СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС - ЭТО УНИКАЛЬНАЯ
- 			   И ПРИДУМАННАЯ ДО МЕЛОЧЕЙ РАБОТА. МЫ НЕ РАБОТАЕМ НА
- 			   КОЛИЧЕСТВО, МЫ ДЕЛАЕМ КАЧЕСТВО</p>
- 			<p class="about-right">НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА, ПОЭТОМУ
- 			   СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ, ДАЖЕ В
- 			   ОБЕДЕННЫЙ ПЕРЕРЫВ. ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТСЯ В УДОБНУЮ
- 			   ДЛЯ ВАС АТМОСФЕРУ. ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И СВОБОДНО!</p>
- 		</div>
+		<div class="content-title">
+			<h1>ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
+		</div>
+		<section class="content-left">
+	 		<div class="left-instruments">
+	 			<h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br>
+	 				ЛУЧШИЕ СРЕДСТВА:</h2>
+	 			<ul>
+	 				<li>BAXTER OF CALIFORNIA</li>
+	 				<li>MR NATTY</li>
+	 				<li>SUAVECITO</li>
+	 				<li>MALIN+GOETZ</li>
+	 			</ul>
+	 		</div>
+		 	<div class="left-about">
+		 		<h2>НЕСКОЛЬКО СЛОВ О НАС:</h2>
+		 			<p>НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ
+		 			   СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС - ЭТО УНИКАЛЬНАЯ
+		 			   И ПРИДУМАННАЯ ДО МЕЛОЧЕЙ РАБОТА. МЫ НЕ РАБОТАЕМ НА
+		 			   КОЛИЧЕСТВО, МЫ ДЕЛАЕМ КАЧЕСТВО</p>
+		 	</div>
+		 </section>
+		 <section class="content-right">
+	 		<div class="right-price">
+	 			<h2>ЦЕНА НА УСЛУГИ<br>
+	 				НАШИХ МАСТЕРОВ:</h2>
+	 			<table>
+	  				<tr>
+					    <td><b>СТРИЖКА</b></td>
+					    <td class="table-price">1500 Р.</td>
+	  				</tr>
+					<tr>
+					    <td><b>СТРИЖКА БОРОДЫ</b></td>
+					    <td class="table-price">500 Р.</td>
+					</tr>
+	  				<tr>
+					    <td><b>НАКРУТКА УСОВ</b></td>
+					    <td class="table-price">350 Р.</td>
+	  		        </tr>
+	  		    </table>
+	 		</div>
+	 		<div class="right-about"> 
+	 			<p>НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА, ПОЭТОМУ
+	 			   СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ, ДАЖЕ В
+	 			   ОБЕДЕННЫЙ ПЕРЕРЫВ. ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТСЯ В УДОБНУЮ
+	 			   ДЛЯ ВАС АТМОСФЕРУ. ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И СВОБОДНО!</p>
+	 		</div>
+	 	</section>
 	</main>	
 	<footer class="main-footer">   <!-- Футер -->
 		<div class="container">

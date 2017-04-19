@@ -9,7 +9,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 }
 
 .main-header {
@@ -17,42 +17,41 @@
 }
 
 .main-navigation {
-	width: 780px;
 	float: left;
+	width: 780px;
 }
 
 .user-block {
-	width: 140px;
 	float: right;
+	width: 140px;
+}
+
+.content-name {
+	float: left;
+	margin-bottom: 30px;
+}
+
+.bredcrumbs {
+	float: left;
+	margin-bottom: 60px;
 }
 
 .content-title {
-	float: left;
-	margin-bottom: 25px;
+	margin-bottom: 75px;
 }
 
-.breadcrumbs {
+.content-left {
 	float: left;
-	margin-bottom: 58px;
+	width: 400px;
 }
 
-.product-photo {
-	float: left;
-	width: 486px;
-	margin-right: 90px;
-}
-
-.product-decription {
+.content-right {
 	float: right;
-	width: 390px;
-}
-
-.description-info {
-	padding-top: 26px;
+	width: 480px;
 }
 
 .main-footer {
-	margin-top: 50px;
+	margin-top: 80px;
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
@@ -65,11 +64,10 @@
 
 .footer-social {
 	float: left;
-	width: 180px;	
+	width: 180px;
 }
 
 .footer-copyright {
 	float: right;
 	width: 140px;
-	
 }
