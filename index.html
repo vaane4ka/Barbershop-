@@ -3,13 +3,15 @@
   <head>
   	<meta charset="utf-8">
   	<title>Барбершоп "Бородинский"</title>
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="css/index.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
-    	<div class="container clearfix"> <!-- Центровщик -->
-    		<nav class="main-navigation"> <!--  Основное меню -->
+    	<div class="container clearfix"> 
+    		<nav class="main-navigation"> 
     			<ul>
                     <li>
                         <a class="main-navigation-selected" href="#">ГЛАВНАЯ</a>
@@ -38,7 +40,7 @@
     </header>
     <main class="container"> <!-- Основной контент/Центровщик-->
     	<section class="index-logo"> <!--Логотип-->
-    		<img src="index-logo.png" width="368" height="204" alt="Барбершоп 'Бородинский'">
+    		<img src="img/index-logo.png" width="368" height="204" alt="Барбершоп 'Бородинский'">
         </section>
     	<section class="features clearfix"> <!-- Фичи -->
     		<div class="features-item">
@@ -54,8 +56,8 @@
   				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
   			</div> 
     	</section>
-    	<div class="index-content clearfix"> <!-- Первый блок контента-->
-    		<div class="index-content-left"><!--Левая секция контента-->
+    	<div class="index-content clearfix"> 
+    		<div class="index-content-left">
     			<h2 class="index-content-tittle">Новости</h2>
     			<ul class="news-preview">
     				<li>
@@ -69,18 +71,18 @@
     			</ul>
     			<a class="btn" href="#">Все новости</a>
     		</div>
-    		<div class="index-content-right">               <!--Правая секция контента-->
+    		<div class="index-content-right"> 
     			<h2 class="index-content-tittle">Фотогалерея</h2>
     			<div class="gallery">
     				<figure class="gallery-content">
-    					<img src="img/photo-1.jpg" width="286" height="164" alt="">
+    					<img src="img/index-img.jpg" width="286" height="164" alt="">
     				</figure>
-    				<button class="btn gallery-prev">Назад</button><button class="btn gallery-next">Вперёд</button>
+    				<button class="btn gallery-prev" disabled>Назад</button><button class="btn gallery-next">Вперёд</button>
     			</div>
     		</div>
     	</div>
     	<div class="index-content clearfix"> <!-- Второй блок Контента-->
-    		<div class="index-content-left"> <!--Левая секция Контента-->
+    		<div class="index-content-left">
     			<h2 class="index-content-tittle">Контактная информация</h2>
  				<p>
  					Барбершор 'Бородинский'<br>
@@ -91,8 +93,8 @@
  					пн - пт: с 10:00 до 22:00<br>
  					сб - вс: с 10:00 до 19:00
  				</p>
- 				<a class="btn" href="#">Как проехать</a>
- 				<a class="btn" href="#">Обратная свзяь</a>
+ 				<a class="btn btn-info" href="#">Как проехать</a>
+ 				<a class="btn btn-info" href="#">Обратная свзяь</a>
     		</div>
     		<div class="index-content-right"> <!--Правая секия контента-->
     			<h2 class="index-content-tittle"> Записаться</h2>
@@ -107,7 +109,7 @@
     		</div>
         </div>
     </main>
-    <footer class="main-footer"><!--Подвал-->
+    <footer class="main-footer clearfix">
     	<div class="container"><!--Центровщик-->
     		<section class="footer-contacts">
     			Барбершор 'Бородинский'<br>
