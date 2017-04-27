@@ -1,3 +1,18 @@
+/*base*/
+
+body {
+	min-width: 960px;
+
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	background: #f3f0ed url("../img/content-gradient.jpg");
+	color: #000000;
+}
+
 .clearfix {
 	content: "";
 	display: table;
@@ -6,50 +21,302 @@
 
 .container {
 	width: 940px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.main-header {
+/*header*/
+
+.main-header{
 	margin-bottom: 60px;
+
+	background: #000000;
+	color: #ffffff; 
 }
 
 .main-navigation {
-	float: left;
 	width: 780px;
+	float: left;
 }
 
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0px;
+}
+
+.main-navigation li {
+	display: inline-block;
+
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.main-navigation a {
+	display: block;
+
+	padding:25px 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.main-navigation a:hover {
+	background: #242424;
+}
+
+
 .user-block {
+	max-width: 140px;
 	float: right;
-	width: 140px;
+}
+
+.login {
+	position: relative;
+
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 20px;
+	padding-left: 50px;
+
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.login:hover{
+	background: #242424;
+}
+
+.login::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 20px;
+
+	width: 18px;
+	height: 18px;
+	background: transparent url("../img/icon-basket.png") no-repeat;
+	opacity: 0.3;
+}
+
+.login:hover:before{
+	opacity: 1;
 }
 
 .content-name {
-	float: left;
+	margin: 0;
 	margin-bottom: 30px;
+	font-size: 30px;
+	line-height: 1.2;
 }
 
 .breadcrumbs {
-	float: left;
 	margin-bottom: 60px;
+}
+
+.breadcrumbs a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.breadcrumbs a::after {
+	content: "";		
+
+	display: inline-block;
+	vertical-align: center;
+	transform: rotate(45deg);
+
+	width: 10px;
+	height: 10px;
+	background: #000000;
+
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.breadcrumbs-selected {
+	color: #aba9a7;
 }
 
 form {
 	float: left;
 	width: 170px;
+	margin-right: 70px;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 55px;
+}
+
+form legend {
+	margin: 0;
+	margin-bottom: 35px;
+
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+form input {
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+input[type="submit"] {
+	background: #000000;
+	color: #ffffff;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 25px;
+
+
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	background: #663d15;
 }
 
 .content-products {
 	float: right;
 	width: 700px;
+	font-size: 0px;
+}
+
+.products-position {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 220px;
+	min-height: 165px; 
+	margin-right: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+	background: #ffffff;
+	color: #000000;
+	text-transform: none;
+
+	font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.products-position:nth-child(3n+3){
+	margin-right: 0;
+}
+
+.position-info {
+	display: block;
+	vertical-align: top;
+
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	text-decoration: none;
+	color: #000000;
+}
+
+.position-price {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	font-size: 0px;
+}
+
+.position-price span {
+	display: inline-block;
+	vertical-align: top;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 25px;
+
+	background: #e6e6e6;
+	color: #000000;
+
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+.price-btn {
+	display: inline-block;
+	vertical-align: top;
+
+	font-size: 14px;
+	line-height: 1.2;
+
+	background: #000000;
+	color: #ffffff;
+
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+
+	text-decoration: none;
+}
+
+.price-btn:hover {
+	background: #663d15;
+}
+
+.content-pagitanion {
+	margin-top: 45px;
+}
+
+.pagination {
+	display: inline-block;
+	vertical-align: top;
+
+	font-size: 14px;
+	line-height: 1.2;
+	text-decoration: none;
+
+	color: #ffffff;
+	background: #000000;
+
+	padding: 15px 20px;
+	margin-right: 7px;  
+}
+
+.pagination:hover {
+	background: #663d15;
+}
+
+.pagination-selected {
+	background: #ffffff;
+	color: #000000; 
+}
+
+.pagination-selected:hover {
+	background: #ffffff;
+	color: #000000;
 }
 
 .main-footer {
 	margin-top: 50px;
 	padding-top: 60px;
 	padding-bottom: 40px;
+
+	background: #242424 url("../img/footer-gradient.jpg");
+	color: #ffffff;
 }
 
 .footer-contacts {
@@ -58,13 +325,93 @@ form {
 	margin-right: 60px;
 }
 
+.footer-contacts a {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.footer-contacts a:hover {
+	text-decoration: none;
+}
+
 .footer-social {
 	float: left;
 	width: 180px;
+	text-align: center;	
+}
+
+.footer-social p {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.social-btn {
+	display: inline-block;
+	vertical-align: top;
+
+	text-decoration: none;
+	font-size: 0;
+
+	width: 43px;
+	height: 43px;
+
+	margin: 0;
+	margin-right: 5px;
+
+	background: #000000 url("../img/socials-icons.png") no-repeat center;
+}
+
+.social-vk {
+	background-position: 0 0;
+}
+
+.social-vk:hover {
+	background-position: 0 -46px ;
+}
+
+.social-fb {
+	background-position: -43px 0;
+}
+
+.social-fb:hover {
+	background-position: -47px -46px ;
+}
+
+.social-inst {
+	background-position: -86px 0;
+}
+
+.social-inst:hover {
+	background-position: -87px -46px ;
 }
 
 .footer-copyright {
 	float: right;
-	widows: 140px;
+	min-width: 140px;
+	text-align: center;
+}
 
+.footer-copyright p {
+	margin: 0;
+	margin-bottom: 15px; 
+}
+
+.footer-copyright .btn {
+	display: inline-block;
+	vertical-align: top;
+
+	text-decoration: none;
+	color: #ffffff;
+
+	background: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+.footer-copyright .btn:hover {
+	background: #ffffff;
+	color: #000000;
 }
