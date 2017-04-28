@@ -29,8 +29,7 @@ body {
 /*header*/
 
 .main-header{
-	margin-bottom: 60px;
-
+	margin-bottom: 45px;
 	background: #000000;
 	color: #ffffff; 
 }
@@ -49,8 +48,7 @@ body {
 
 .main-navigation li {
 	display: inline-block;
-
-	vertical-align: top;
+  vertical-align: top;
 	font-size: 16px;
 	line-height: 20px;
 }
@@ -111,13 +109,13 @@ body {
 
 .content-name {
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-size: 30px;
 	line-height: 1.2;
 }
 
 .breadcrumbs {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .breadcrumbs a {
@@ -154,12 +152,12 @@ fieldset {
 	border: none;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 55px;
+	margin-bottom: 25px;
 }
 
 form legend {
 	margin: 0;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 
 	font-size: 24px;
 	line-height: 1.2;
@@ -242,10 +240,10 @@ input[type="submit"]:hover {
 .position-price span {
 	display: inline-block;
 	vertical-align: top;
-
+	
 	padding-top: 15px;
 	padding-bottom: 15px;
-	padding-left: 30px;
+	padding-left: 25px;
 	padding-right: 25px;
 
 	background: #e6e6e6;

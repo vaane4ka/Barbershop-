@@ -146,6 +146,10 @@ body {
 	display: none;
 }
 
+.breadcrumbs-selected {
+	color: #aba9a7;
+}
+
 
 .product-photo {
 	float: left;
